@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="DesktopApplication2PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>desktopapplication2.Project</class>
+    <class>desktopapplication2.Book</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://GLS-KABIS\GLS-KABIS:3595;databaseName=IMLS"/>
+      <property name="javax.persistence.jdbc.password" value="server034techs**"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.user" value="administrator"/>
+    </properties>
+  </persistence-unit>
+</persistence>
